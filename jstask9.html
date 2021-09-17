@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="jstask9.css">
+	<script src="jstask9.js"></script>
+</head>
+<body>
+  <header>
+	<div class="top">
+	  <h1>Student Details</h1>
+    </div>
+</header>
+<div class="entire">
+ <form>
+ 	<label for="name">Name:</label><br>
+ 	<input type="text" id='name' name="name" placeholder="Enter Name" class="box" required><br>
+ 	<label for="age">Age:</label><br>
+ 	<input type="text" id="age" name="age" placeholder="Enter age" class="box" required>
+ 	<p>Select Gender:</p>
+  <input type="radio" id="male" name="gender" value="Male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female">Female</label><br>
+ 	<label for="email">Email:</label><br>
+ 	<input type="text" id="email" name="email" placeholder="Enter Email" class="box" required><br>
+ 	<label for="clg">College:</label><br>
+ 	<input type="text" id="college" name="clg" placeholder="College Name" class="box" required><br>
+ 	<label for="dept">Department:</label><br>
+ 	<select id="dept">
+ 		<option disabled selected>Select department</option>
+ 		<option value="Mechanical engineering">Mechanical engineering</option>
+        <option value="Civil engineering">Civil engineering</option>
+        <option value="Aeronatical engineering">Aeronatical engineering</option>
+        <option value="Electronics and Communication engineering">Electronics and Communication engineering</option>
+        <option value="Chemical engineering">Chemical engineering</option>
+        <option value="Computer science engineering">Computer science engineering</option>
+        <option value="Electronics and Electrical engineering">Electronics and Electrical engineering</option>
+ 	</select><br>
+ 	<label for="CGPA">CGPA:</label><br>
+ 	<input type="text" id="cgpa" name="cgpa" placeholder="Enter CGPA" class="box" required><br><br>
+  <input type="button" onclick ="report()" id="submit" value="submit">
+ </form>
+</div>
+</body>
+</html>
